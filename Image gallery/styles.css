@@ -34,6 +34,7 @@ body{
     display: none;
 }
 
+
 .gallery-wrap{
     display: flex;
     align-items: center;
@@ -42,11 +43,16 @@ body{
 }
 
 
-#backBtn , #nextBtn{
+#backBtn, #nextBtn{
     width: 50px;
     cursor: pointer;
     margin: 40px;
 }
+
+
+
+
+
 
 .gallery div img:hover{
     filter: grayscale(0);
