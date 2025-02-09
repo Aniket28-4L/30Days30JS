@@ -8,4 +8,13 @@ pass.addEventListener("input",()=>{
     }else{
         msg.style.display = "block";
     }
+    if(pass.value.length < 4){
+        str.innerHTML = "weak"
+    }
+    else if(pass.value.length >= 4 && pass.value.length < 8){
+        str.innerHTML = "medium"
+    }
+    else if(pass.value.length >= 0){
+        str.innerHTML = "strong"
+    }
 })
