@@ -134,7 +134,7 @@ const nextButton = document.getElementById("next-btn");
 
 
 let currentQuestionIndex = 0;
-let socre = 0;
+let score = 0;
 
 function startQuiz(){
     currentQuestionIndex = 0;
@@ -174,6 +174,7 @@ function selectAnswer(e){
     const isCorrect = selectedBtn.dataset.correct === 'true';
     if(isCorrect){
         selectedBtn.classList.add('correct');
+        score++;
     }else{
         selectedBtn.classList.add('incorrect');
     
@@ -187,5 +188,32 @@ function selectAnswer(e){
     nextButton.style.display = 'block';
 }
 
+
+function showScore(){
+    resetState();
+    questionElement.innerHTML = "You answered " + score + " questions correctly!";
+    nextButton.innerHTML = 'Restart';
+    nextButton.style.display = 'block';
+    
+}
+
+function handleNextButton(){
+    currentQuestionIndex++;
+    if(currentQuestionIndex === questions.length){
+        showQuestion();
+
+    }
+    else{
+        showScore();
+    }
+}
+
+nextButton.addEventListener("click", () => {
+    if(currentQuestionIndex < questions.length){
+        handleNextButton();
+    }else{
+        startQuiz();
+    }
+})
 
 startQuiz();
