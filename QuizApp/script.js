@@ -127,3 +127,24 @@ const questions = [
     }
 
 ];
+
+const questionElement = document.getElementById("question");
+const answerButtons = document.getElementById("answer-buttons");
+const nextButton = document.getElementById("next-btn");
+
+
+let currentQuestionIndex = 0;
+let socre = 0;
+
+function startQuiz(){
+    currentQuestionIndex = 0;
+    socre = 0;
+    nextButton.innerHTML = 'Next';
+    showQuestion();
+}
+
+function showQuestion(){
+    let currentQuestion  = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+}
