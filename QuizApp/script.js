@@ -51,7 +51,7 @@ let score = 0;
 
 function startQuiz(){
     currentQuestionIndex = 0;
-    socre = 0;
+    score = 0;
     nextButton.innerHTML = 'Next';
     showQuestion();
 }
@@ -112,7 +112,7 @@ function showScore(){
 
 function handleNextButton(){
     currentQuestionIndex++;
-    if(currentQuestionIndex === questions.length){
+    if(currentQuestionIndex < questions.length){
         showQuestion();
 
     }
