@@ -1,130 +1,43 @@
 const questions = [
     {
         question: "What is the capital of France?",
-        answers: [{
-            text: "Berlin",
-            correct: false
-        },
-        {
-            text: "Madrid",
-            correct: false
-        },
-        {
-            text: "Paris",
-            correct: true
-        },
-        {
-            text: "Rome",
-            correct: false
-        },
-        ]
-        
+        answers: [{text: "Berlin",correct: false},
+        {text: "Madrid",  correct: false},
+        {text: "Paris",correct: true},
+        {text: "Rome", correct: false},]
     },
-    {
-        question: "What is the capital of Germany?",
-        answers: [{
-            text: "Berlin",
-            correct: true
-        },
-        {
-            text: "Madrid",
-            correct: false
-        },
-        {
-            text: "Paris",
-            correct: false
-        },
-        {
-            text: "Rome",
-            correct: false
-        },
-        ]
-        
+   
+    {   
+        question: "Who is the current Prime Minister of France?",
+        answers: [{text: "Emmanuel Macron", correct: true},
+        {text: "Jean-Paul Macron", correct: false},
+        {text: "François Hollande", correct: false},
+        {text: "Jean-Luc Godard", correct: false},]
     },
+
     {
-        question: "What is the capital of Spain?",
-        answers: [{
-            text: "Berlin",
-            correct: false
-        },
-        {
-            text: "Madrid",
-            correct: true
-        },
-        {
-            text: "Paris",
-            correct: false
-        },
-        {
-            text: "Rome",
-            correct: false
-        },
-        ]
-        
+        question: "Which country is the largest producer of coffee beans?",
+        answers: [{text: "Brazil", correct: true},
+        {text: "Colombia", correct: false},
+        {text: "Ethiopia", correct: false},
+        {text: "Indonesia", correct: false},]
     },
+
     {
-        question: "What is the capital of Italy?",
-        answers: [{
-            text: "Berlin",
-            correct: false
-        },
-        {
-            text: "Madrid",
-            correct: false
-        },
-        {
-            text: "Paris",
-            correct: false
-        },
-        {
-            text: "Rome",
-            correct: true
-        },
-        ]
-        
+        question: "What is the most populous city in the world?",
+        answers: [{text: "New York", correct: false},
+        {text: "Tokyo", correct: false},
+        {text: "London", correct: false},
+        {text: "Beijing", correct: true},]
     },
+
     {
-        question: "What is the capital of Portugal?",
-        answers: [{
-            text: "Berlin",
-            correct: false
-        },
-        {
-            text: "Madrid",
-            correct: false
-        },
-        {
-            text: "Lisbon",
-            correct: true
-        },
-        {
-            text: "Rome",
-            correct: false
-        },
-        ]
-        
+        question: "Which country has the highest number of languages spoken?",
+        answers: [{text: "China", correct: false},
+        {text: "India", correct: false},
+        {text: "United States", correct: false},
+        {text: "Indonesia", correct: true},]
     },
-    {
-        question: "What is the capital of the Netherlands?",
-        answers: [{
-            text: "Amsterdam",
-            correct: true
-        },
-        {
-            text: "Madrid",
-            correct: false
-        },
-        {
-            text: "Paris",
-            correct: false
-        },
-        {
-            text: "Rome",
-            correct: false
-        },
-        ]
-        
-    }
 
 ];
 
