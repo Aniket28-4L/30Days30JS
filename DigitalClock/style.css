@@ -30,6 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    backdrop-filter: blur(40px);
 }
 
 .container::before{
@@ -54,4 +55,22 @@
     right: -30px;
     bottom: -50px;
     z-index: -1;
+}
+
+
+.clock span{
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.clock span::after{
+    content: "HOURS";
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
 }
