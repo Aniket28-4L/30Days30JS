@@ -82,3 +82,24 @@ nav .circle{
     border: 8px solid #fff;
     box-shadow: 0 5px 5px rgba(255,26,26,0.22);
 }
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+}
+
+.controls div{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #f53192;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+}
